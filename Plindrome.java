@@ -12,10 +12,10 @@ public class Plindrome {
         boolean ischeck = true;
         int lastindex = text.length() - 1;
         if (text.length() == 0 || text.length() == 1) {
-            return !ischeck;
+            return ischeck;
         }
         if (text.charAt(0) != text.charAt(lastindex)) {
-            return ischeck;
+            return !ischeck;
         }
         text = text.substring(1, lastindex);
         return isPladrome(text);
